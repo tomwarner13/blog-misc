@@ -160,55 +160,54 @@ a:hover {
         flex: 0 0 auto;
     }
 }
-.hack,
-.hack blockquote,
-.hack code,
-.hack em,
-.hack h1,
-.hack h2,
-.hack h3,
-.hack h4,
-.hack h5,
-.hack h6,
-.hack strong {
+blockquote,
+code,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
     font-size: 1rem;
     font-style: normal;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
-.hack blockquote,
-.hack code,
-.hack em,
-.hack strong {
+blockquote,
+code,
+em,
+strong {
     line-height: 20px;
 }
-.hack blockquote,
-.hack code,
-.hack footer,
-.hack h1,
-.hack h2,
-.hack h3,
-.hack h4,
-.hack h5,
-.hack h6,
-.hack header,
-.hack li,
-.hack ol,
-.hack p,
-.hack section,
-.hack ul {
+blockquote,
+code,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+li,
+ol,
+p,
+section,
+ul {
     float: none;
     margin: 0;
     padding: 0;
 }
-.hack blockquote,
-.hack h1,
-.hack ol,
-.hack p,
-.hack ul {
+blockquote,
+h1,
+ol,
+p,
+ul {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.hack h1 {
+h1 {
     position: relative;
     display: inline-block;
     display: table-cell;
@@ -216,72 +215,72 @@ a:hover {
     margin: 0;
     overflow: hidden;
 }
-.hack h1:after {
+h1:after {
     content: "====================================================================================================";
     position: absolute;
     bottom: 10px;
     left: 0;
 }
-.hack h1 + * {
+h1 + * {
     margin-top: 0;
 }
-.hack h2,
-.hack h3,
-.hack h4,
-.hack h5,
-.hack h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     position: relative;
     margin-bottom: 1.75rem;
 }
-.hack h2:before,
-.hack h3:before,
-.hack h4:before,
-.hack h5:before,
-.hack h6:before {
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
     display: inline;
 }
-.hack h2:before {
+h2:before {
     content: "## ";
 }
-.hack h3:before {
+h3:before {
     content: "### ";
 }
-.hack h4:before {
+h4:before {
     content: "#### ";
 }
-.hack h5:before {
+h5:before {
     content: "##### ";
 }
-.hack h6:before {
+h6:before {
     content: "###### ";
 }
-.hack li {
+li {
     position: relative;
     display: block;
     padding-left: 20px;
 }
-.hack li:after {
+li:after {
     position: absolute;
     top: 0;
     left: 0;
 }
-.hack ul > li:after {
+ul > li:after {
     content: "-";
 }
-.hack ol {
+ol {
     counter-reset: a;
 }
-.hack ol > li:after {
+ol > li:after {
     content: counter(a) ".";
     counter-increment: a;
 }
-.hack blockquote {
+blockquote {
     position: relative;
     padding-left: 17px;
     padding-left: 2ch;
     overflow: hidden;
 }
-.hack blockquote:after {
+blockquote:after {
     content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
     white-space: pre;
     position: absolute;
@@ -289,31 +288,31 @@ a:hover {
     left: 0;
     line-height: 20px;
 }
-.hack em:after,
-.hack em:before {
+em:after,
+em:before {
     content: "*";
     display: inline;
 }
-.hack pre code:after,
-.hack pre code:before {
+pre code:after,
+pre code:before {
     content: "";
 }
-.hack code {
+code {
     font-weight: 700;
 }
-.hack code:after,
-.hack code:before {
+code:after,
+code:before {
     content: "`";
     display: inline;
 }
-.hack hr {
+hr {
     position: relative;
     height: 20px;
     overflow: hidden;
     border: 0;
     margin: 20px 0;
 }
-.hack hr:after {
+hr:after {
     content: "----------------------------------------------------------------------------------------------------";
     position: absolute;
     top: 0;
@@ -323,13 +322,16 @@ a:hover {
     word-wrap: break-word;
 }
 @-moz-document url-prefix() {
-    .hack h1 {
+    h1 {
         display: block;
     }
 }
+
+/* may need to mess with this if list display looks wonky
 .hack-ones ol > li:after {
     content: "1.";
 }
+*/
 p {
     margin: 0 0 1.75rem;
 }
@@ -792,121 +794,120 @@ select.form-control {
 /* DARK MODE BEGINS HERE ---------------------------------------------------------------------- */
 
 
-.dark {
+* {
     color: #ccc;
 }
-.dark,
-.dark pre {
+* {
     background-color: #000;
 }
-.dark pre {
+pre {
     padding: 0;
     border: none;
 }
-.dark pre code {
+pre code {
     color: #00bcd4;
 }
-.dark h1 a,
-.dark h2 a,
-.dark h3 a,
-.dark h4 a,
-.dark h5 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
     color: #ccc;
 }
-.dark code,
-.dark strong {
+code,
+strong {
     color: #fff;
 }
-.dark code {
+code {
     font-weight: 100;
 }
-.dark table {
+table {
     color: #ccc;
 }
-.dark table td,
-.dark table th {
+table td,
+table th {
     border-color: #444;
 }
-.dark table tbody td:first-child {
+table tbody td:first-child {
     color: #fff;
 }
-.dark .form-group label {
+.form-group label {
     color: #ccc;
     border-color: rgba(95, 95, 95, 0.78);
 }
-.dark .form-group.form-textarea label:after {
+.form-group.form-textarea label:after {
     background-color: #000;
 }
-.dark .form-control {
+.form-control {
     color: #ccc;
     border-color: rgba(95, 95, 95, 0.78);
 }
-.dark .form-control:focus {
+.form-control:focus {
     border-color: #ccc;
     color: #ccc;
 }
-.dark textarea.form-control {
+textarea.form-control {
     color: #ccc;
 }
-.dark .card {
+.card {
     border-color: rgba(95, 95, 95, 0.78);
 }
-.dark .card .card-header {
+.card .card-header {
     background-color: transparent;
     color: #ccc;
     border-bottom: 1px solid rgba(95, 95, 95, 0.78);
 }
-.dark .btn.btn-ghost.btn-default {
+.btn.btn-ghost.btn-default {
     border-color: #ababab;
     color: #ababab;
 }
-.dark .btn.btn-ghost.btn-default:focus,
-.dark .btn.btn-ghost.btn-default:hover {
+.btn.btn-ghost.btn-default:focus,
+.btn.btn-ghost.btn-default:hover {
     border-color: #9c9c9c;
     color: #9c9c9c;
     z-index: 1;
 }
-.dark .btn.btn-ghost.btn-default:focus,
-.dark .btn.btn-ghost.btn-default:hover {
+.btn.btn-ghost.btn-default:focus,
+.btn.btn-ghost.btn-default:hover {
     border-color: #e0e0e0;
     color: #e0e0e0;
 }
-.dark .btn.btn-ghost.btn-primary:focus,
-.dark .btn.btn-ghost.btn-primary:hover {
+.btn.btn-ghost.btn-primary:focus,
+.btn.btn-ghost.btn-primary:hover {
     border-color: #64b5f6;
     color: #64b5f6;
 }
-.dark .btn.btn-ghost.btn-success:focus,
-.dark .btn.btn-ghost.btn-success:hover {
+.btn.btn-ghost.btn-success:focus,
+.btn.btn-ghost.btn-success:hover {
     border-color: #81c784;
     color: #81c784;
 }
-.dark .btn.btn-ghost.btn-info:focus,
-.dark .btn.btn-ghost.btn-info:hover {
+.btn.btn-ghost.btn-info:focus,
+.btn.btn-ghost.btn-info:hover {
     border-color: #4dd0e1;
     color: #4dd0e1;
 }
-.dark .btn.btn-ghost.btn-error:focus,
-.dark .btn.btn-ghost.btn-error:hover {
+.btn.btn-ghost.btn-error:focus,
+.btn.btn-ghost.btn-error:hover {
     border-color: #e57373;
     color: #e57373;
 }
-.dark .btn.btn-ghost.btn-warning:focus,
-.dark .btn.btn-ghost.btn-warning:hover {
+.btn.btn-ghost.btn-warning:focus,
+.btn.btn-ghost.btn-warning:hover {
     border-color: #ffb74d;
     color: #ffb74d;
 }
-.dark .avatarholder,
-.dark .placeholder {
+.avatarholder,
+.placeholder {
     background-color: transparent;
     border-color: #333;
 }
-.dark .menu .menu-item {
+.menu .menu-item {
     color: #ccc;
     border-color: rgba(95, 95, 95, 0.78);
 }
-.dark .menu .menu-item.active,
-.dark .menu .menu-item:hover {
+.menu .menu-item.active,
+.menu .menu-item:hover {
     color: #fff;
     border-color: #ccc;
 }

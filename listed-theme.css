@@ -2,6 +2,20 @@
 metatype: css
 ---
 
+:root {
+	--border: 1px solid rgba(204, 204, 204, 0.16);
+	--color-default: #000;
+	--color-primary: #4AF626;
+	--color-primary-opacity-8: rgba(74, 246, 38, 0.08);
+	--color-neutral: var(--color-default);
+	--color-neutral-darker: var(--color-default);
+	--color-contrast: #ccc;
+  	--color-contrast-opacity-8: rgba(204, 204, 204, 0.08);
+  	--color-contrast-opacity-16: rgba(204, 204, 204, 0.16);
+  	--color-contrast-opacity-36: rgba(204, 204, 204, 0.36);
+  	--color-contrast-opacity-86: rgba(204, 204, 204, 0.86);
+}
+
 html {
     font-size: 12px;
 }
@@ -45,12 +59,12 @@ pre code {
 }
 a {
     cursor: pointer;
-    color: #ff2e88;
+    color: var(--color-primary);
     text-decoration: none;
-    border-bottom: 1px solid #ff2e88;
+    border-bottom: 1px solid #4AF626;
 }
 a:hover {
-    background-color: #ff2e88;
+    background-color: var(--color-primary);
     color: #fff;
 }
 .grid {

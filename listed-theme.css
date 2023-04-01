@@ -229,12 +229,14 @@ h1 {
     margin: 0;
     overflow: hidden;
 }
+/* disabled cause it looks janky on mobile
 h1:after {
     content: "----------------------------------------------------------------------------------------------------";
     position: absolute;
     bottom: 10px;
     left: 0;
 }
+*/
 h1 + * {
     margin-top: 0;
 }

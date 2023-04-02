@@ -825,6 +825,10 @@ select.form-control {
 * {
     background-color: #000;
 }
+*:before,
+*:after {
+		filter: brightness(60%);
+}
 pre {
     padding: 0;
     border: none;

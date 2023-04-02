@@ -14,6 +14,7 @@ metatype: css
   	--color-contrast-opacity-16: rgba(204, 204, 204, 0.16);
   	--color-contrast-opacity-36: rgba(204, 204, 204, 0.36);
   	--color-contrast-opacity-86: rgba(204, 204, 204, 0.86);
+  --post-code-background-color: var(--color-default);
 }
 
 html {
@@ -53,9 +54,12 @@ pre {
 code[class*="language-"],
 pre[class*="language-"],
 pre code {
-    font-weight: 100;
+    font-weight: 700;
     text-shadow: none;
     margin: 1.75rem 0;
+}
+code {
+		border: none !important;
 }
 a {
     cursor: pointer;
@@ -192,7 +196,8 @@ blockquote,
 code,
 em,
 strong {
-    line-height: 20px;
+    line-height: normal;
+		font-size: 90% !important;
 }
 blockquote,
 code,
@@ -824,8 +829,9 @@ pre {
     padding: 0;
     border: none;
 }
-pre code {
-    color: #00bcd4;
+code {
+    color: var(--color-primary) !important;
+		font-weight: 600 !important;
 }
 h1 a,
 h2 a,

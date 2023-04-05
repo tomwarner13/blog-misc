@@ -314,8 +314,15 @@ blockquote:after {
     line-height: 20px;
 }
 em:after,
-em:before {
+em:before,
+i:after,
+i:before {
     content: "*";
+    display: inline;
+}
+strong:after,
+strong:before {
+    content: "**";
     display: inline;
 }
 pre code:after,

@@ -353,6 +353,9 @@ hr:after {
     width: 100%;
     word-wrap: break-word;
 }
+hr:before {
+		display: none;
+}
 @-moz-document url-prefix() {
     h1 {
         display: block;

@@ -304,6 +304,7 @@ blockquote {
     padding-left: 17px;
     padding-left: 2ch;
     overflow: hidden;
+    border-left: none;
 }
 blockquote:after {
     content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
@@ -311,7 +312,7 @@ blockquote:after {
     position: absolute;
     top: 0;
     left: 0;
-    line-height: 20px;
+    /*line-height: 20px;*/
 }
 em:after,
 em:before,
@@ -369,6 +370,9 @@ hr:before {
 */
 p {
     margin: 0 0 1.75rem;
+}
+blockquote p {
+    margin: 0 0;
 }
 .container {
     max-width: 70rem;
